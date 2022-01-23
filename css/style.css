@@ -407,6 +407,14 @@ img {
 	line-height: 1;
 }
 
+.Tangerine {
+	font-family: 'Tangerine', serif;
+	font-size: 48px;
+	color: #674ea7;
+	margin: 16px;
+	text-align: center;
+}
+
 .dance-med {
 	font-family: 'Dancing Script', cursive;
 	font-weight: bolder;
