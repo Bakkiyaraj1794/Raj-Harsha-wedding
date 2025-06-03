@@ -17,7 +17,7 @@
 })(jQuery);
 
 // Set the date we're counting down to
-var countDownDate = new Date("Feb 14, 2022 06:01:00").getTime();
+var countDownDate = new Date("Jul 07, 2025 06:01:00").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {

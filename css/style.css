@@ -385,16 +385,18 @@ img {
 	display: block;
 }
 
+
 .title h1 {
-	font-family: 'Dancing Script', cursive;
+	font-family: 'Great Vibes', cursive;
+	color: #C71585; /* Medium Violet Red or use #8A2BE2 for bluish-purple */
+	font-size: 3em;
 	font-weight: bold;
 	font-style: normal;
 	font-size: 65px;
 	margin: 30px 0;
-	color: #674ea7;
+	
 	padding: 10px;
-
-}
+  }
 
 .title h2 {
 	font-family: 'Dancing Script', cursive;
@@ -412,27 +414,34 @@ img {
 	font-weight: bolder;
 	font-style: normal;
 	font-size: 32px;
-	color: #674ea7;
+	color: #C71585;
 	margin: 16px;
 	text-align: center;
 }
 
+
 .title h3 {
-	font-weight: 300;
-	text-transform: uppercase;
-	letter-spacing: 5px;
-	font-size: 24px;
-	color: #674ea7;
+	font-family: 'Merriweather', serif;
+	font-weight: 500;
+	font-size: 28px;
+	color: #6A5ACD; /* Warm dark brown */
 	margin-top: 5px;
+	text-transform: none;
+	letter-spacing: 1px;
 }
 
-.title p {
-	color: #564861;
+
+
+.title p:first-of-type {
+	font-family: 'Noto Serif Tamil', serif; /* or Catamaran */
+	color: #A52A2A; /* Firebrick red */
+	font-size: 1.2em;
 	margin: 30px 0 20px;
 	text-transform: uppercase;
 	letter-spacing: 3px;
 	font-size: 16px;
-}
+  }
+  
 
 .wrap {
 	display: -webkit-flex;
@@ -506,6 +515,9 @@ body {
 	width: 180px;
 	height: 160px;
 	display: flex;
+	font-family: 'Playfair Display', serif;
+	font-weight: bold;
+	text-align: center;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
@@ -519,28 +531,33 @@ body {
 }
 
 .days {
-	background: linear-gradient(90deg, #b33a46, #9b313c);
+	background: linear-gradient(135deg, #8B0000, #B22222); /* Ruby Red gradient */
+	color: #fff;
 }
 
 .hours {
-	background: linear-gradient(90deg, #a7c3cd, #90a9b2);
+	background: linear-gradient(135deg, #003366, #005580); /* Deep Royal Blue */
+	color: #fff;
 }
 
 .minutes {
-	background-color: #874562;
+	background: linear-gradient(135deg, #4B0082, #6A0DAD); /* Royal Purple */
+	color: #fff;
 }
 
 .seconds {
-	background-color: #145689;
+	background: linear-gradient(135deg, #705D00, #BFA23A); /* Antique Gold */
+	color: #fff;
 }
 
+
 .date {
-	color: #874562;
+	color: #6A5ACD;
 	font-weight: 900;
 }
 
 .place {
-	color: #874562;
+	color: #4B3621;
 	font-weight: 900;
 }
 
