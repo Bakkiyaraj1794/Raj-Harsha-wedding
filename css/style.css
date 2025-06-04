@@ -342,6 +342,56 @@
 	pointer-events: none;
 	position: absolute
 }
+.tamil-quote {
+    text-align: center;
+    font-size: 24px;
+    margin: 20px auto 10px auto;
+    padding: 10px 15px;
+    z-index: 10;
+    position: relative;
+}
+
+.tamil-quote p {
+    font-family: 'Noto Serif Tamil', serif;
+    color: #800000;
+    line-height: 1.4;
+    word-break: break-word;
+}
+/* Hide mobile video by default */
+.mobile-video {
+	display: none;
+  }
+  
+  /* Hide desktop video on smaller screens */
+  .desktop-video {
+	display: block;
+	width: 100%;
+	height: auto;
+  }
+  
+  /* Show mobile video on small devices */
+  @media (max-width: 768px) {
+	.desktop-video {
+	  display: none;
+	}
+	.mobile-video {
+	  display: block;
+	  width: 100%;
+	  height: auto;
+	}
+  }
+  
+/* Responsive font size for mobile */
+@media only screen and (max-width: 768px) {
+    .tamil-quote {
+        font-size: 18px;
+        padding: 20px 20px 0 20px;
+    }
+
+    .tamil-quote p {
+        font-size: 18px;
+    }
+}
 
 .sakura {
 	background: #674ea7;
@@ -557,7 +607,7 @@ body {
 }
 
 .place {
-	color: #4B3621;
+	color: #6A5ACD;
 	font-weight: 900;
 }
 
