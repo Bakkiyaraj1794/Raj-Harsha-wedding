@@ -585,7 +585,7 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	gap: 20px; /* spacing between time blocks */
+	gap: 10px; /* spacing between time blocks */
 	flex-wrap: wrap; /* allows wrapping on smaller screens */
   }
   
