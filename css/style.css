@@ -401,8 +401,18 @@
 /*******************************/
 
 body {
-	font-family: Arial, Helvetica, Sans-serif;
-}
+	background-color: #fdf6e3; /* Light sandal */
+	color: #5c3e2c;            /* Common sandal text color */
+	border: 20px solid #d9b382; /* Wedding card style border */
+	box-sizing: border-box;
+	padding: 20px;
+  }
+  body, h1, h2, h3, h4, h5, h6, p, span, a {
+	color: #a00000 !important;
+  }
+
+  
+  
 
 img {
 	max-width: 100%;
@@ -554,51 +564,78 @@ body {
 	color: #fff;
 }
 
+/* Countdown Container */
+
+
+
+#time {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 15px;
+    flex-wrap: wrap;
+    font-family: 'Playfair Display', serif;
+    background: transparent; /* ✅ remove white background */
+    box-shadow: none;         /* ✅ remove any shadow */
+    padding: 0;               /* ✅ optional: remove inner space */
+    border-radius: 0;         /* ✅ optional: remove rounded look */
+}
+
 .container {
 	display: flex;
-	/* grid-template-columns: 1fr 1fr; */
-	border-radius: 10px;
-	overflow: hidden;
-}
-
-.block {
-	width: 180px;
-	height: 160px;
-	display: flex;
-	font-family: 'Playfair Display', serif;
-	font-weight: bold;
-	text-align: center;
 	justify-content: center;
 	align-items: center;
+	gap: 50px; /* spacing between time blocks */
+	flex-wrap: wrap; /* allows wrapping on smaller screens */
+  }
+  
+  .block {
+	font-family: 'Playfair Display', serif;
+	font-weight: bold;
+	font-size: 28px;
+	color: #3c3c3c;
 	text-align: center;
-	color: #fff;
+  }
+  
+  .block span {
+	display: block;
+	font-size: 16px;
+	font-weight: normal;
+	color: #a32121;
+	margin-top: 4px;
+  }
+  
+  .dissolve-in {
+	opacity: 0;
+	transform: translateY(20px);
+	filter: blur(4px);
+	transition: opacity 1.5s ease-out, transform 1.5s ease-out, filter 1.5s ease-out;
+  }
+  
+  .dissolve-in.visible {
+	opacity: 1;
+	transform: translateY(0);
+	filter: blur(0);
+  }
+  
 
-	/* @media screen and (min-width: 560px) {
-		width: 135px;
-		height: 120px;
-	  } */
-	 
+
+
+/* Mobile Responsiveness */
+@media only screen and (max-width: 600px) {
+    .block {
+        font-size: 24px;
+    }
+
+    .block span {
+        font-size: 14px;
+    }
 }
 
-.days {
-	background: linear-gradient(135deg, #8B0000, #B22222); /* Ruby Red gradient */
-	color: #fff;
-}
 
-.hours {
-	background: linear-gradient(135deg, #003366, #005580); /* Deep Royal Blue */
-	color: #fff;
-}
 
-.minutes {
-	background: linear-gradient(135deg, #4B0082, #6A0DAD); /* Royal Purple */
-	color: #fff;
-}
 
-.seconds {
-	background: linear-gradient(135deg, #705D00, #BFA23A); /* Antique Gold */
-	color: #fff;
-}
+
 
 
 .date {
