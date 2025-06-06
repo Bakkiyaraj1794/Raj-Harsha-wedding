@@ -582,12 +582,14 @@ body {
 }
 
 .container {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	gap: 5px; /* spacing between time blocks */
-	flex-wrap: wrap; /* allows wrapping on smaller screens */
-  }
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  gap: 12px;
+  overflow-x: auto;
+  padding: 10px;
+}
+
   
   .block {
 	font-family: 'Playfair Display', serif;
