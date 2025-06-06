@@ -37,10 +37,10 @@ var x = setInterval(function() {
     // Output the result in an element with id="demo"
     document.getElementById("time").innerHTML = `
     <div class='container'>
-      <div class='block'>${days}<span>Days</span></div>
-      <div class='block'>${hours}<span>Hours</span></div>
-      <div class='block'>${minutes}<span>Minutes</span></div>
-      <div class='block'>${seconds}<span>Seconds</span></div>
+      <div class='block'>${days}<span>Days,</span></div>
+      <div class='block'>${hours}<span>Hours,</span></div>
+      <div class='block'>${minutes}<span>Minutes,</span></div>
+      <div class='block'>${seconds}<span>Seconds.</span></div>
     </div>
   `;
   
