@@ -590,7 +590,13 @@ body {
   padding: 10px;
 }
 
-  
+  .separator {
+  font-size: 22px;
+  padding: 0 10px;
+  color: #999;
+  align-self: center;
+}
+
   .block {
 	font-family: 'Playfair Display', serif;
 	font-weight: bold;
