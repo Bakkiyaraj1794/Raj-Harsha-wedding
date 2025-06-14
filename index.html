@@ -193,6 +193,9 @@
 </div>
 <div class="actions"> <a href="#top"><br>
   <div class="venue"><b>^ TOP ^</b></div>
+ <div class="music">
+  <audio id="bg-music" src="./assets/background-music.mp3" autoplay loop></audio>
+</div>
   </a> </div>
 <br>
 Created with lots of love ❤️ by Harsha Raj
@@ -213,6 +216,15 @@ Created with lots of love ❤️ by Harsha Raj
     observer.observe(el);
   });
 </script>
-
+<script>
+  window.addEventListener('DOMContentLoaded', function() {
+    var audio = document.getElementById('bg-music');
+    if (audio) {
+      audio.volume = 0.5; // Set volume to 50%
+      // Some browsers require user interaction to play audio
+      audio.play().catch(function(){ /* ignore autoplay error */ });
+    }
+  });
+</script>
 </body>
 </html>
